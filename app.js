@@ -2,7 +2,7 @@ var express = require('express');
 var bodyPerser = require('body-parser');
 var app = express();
 var login = require('./controller/login');
-//var admin = require('./controller/admin');
+var admin = require('./controller/admin');
 
 //config
 app.set('view engine', 'ejs');
