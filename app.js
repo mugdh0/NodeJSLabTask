@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 //middleware
 app.use(bodyPerser());
 app.use('/login',login);
-//app.use('/admin',admin);
+app.use('/admin',admin);
 
  //router
 app.get('/', function(req, res){
