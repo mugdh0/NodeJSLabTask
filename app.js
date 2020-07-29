@@ -13,10 +13,6 @@ app.use('/login',login);
 app.use('/admin',admin);
 
  //router
-app.get('/', function(req, res){
-  res.send('fc rout');
-});
-
 
 app.listen(3000, function(){
   console.log('express http server started at 3000')
