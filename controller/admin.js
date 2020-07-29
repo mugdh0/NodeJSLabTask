@@ -5,7 +5,7 @@ router.get('/', function(req, res){
   res.render('admin')
 });
 
-/*
+
 router.post('/', function(req, res){
   if(req.body.submit=='Add employe'){
     res.redirect('admin/addEmployee');
@@ -24,5 +24,5 @@ router.get('/allEmployee', function(req, res){
 app.get('/admin/edit/3', function(req, res){
          res.send(req.params.id);
 })
-*/
+
 module.exports = router;
