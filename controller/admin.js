@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res){
-  res.render('admin')
+  res.render('admin');
 });
 router.get('/addEmployee', function(req, res){
   res.render('addEmployee');
@@ -27,6 +27,10 @@ router.post('/', function(req, res){
 router.get('/update/:id', function(req, res){
         //res.send(req.params.id);
          res.render('update');
+})
+router.get('/delete/:id', function(req, res){
+        //res.send(req.params.id);
+         res.render('delete');
 })
 
 module.exports = router;
