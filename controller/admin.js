@@ -25,7 +25,8 @@ router.post('/', function(req, res){
 
 
 router.get('/update/:id', function(req, res){
-         res.send(req.params.id);
+        //res.send(req.params.id);
+         res.render('update');
 })
 
 module.exports = router;

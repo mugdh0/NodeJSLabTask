@@ -8,7 +8,7 @@ router.get('/', function(req, res){
 router.post('/', function(req, res){
 
   if(req.body.uname=='admin' && req.body.pass=='1234'){
-    res.redirect('admin/');
+    res.redirect('/admin');
   }else{
     res.send("invalid user");
   }
